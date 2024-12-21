@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <button onclick="ascending()">ascending order</button>
+    <button onclick="descending()">descending order</button>
+    <p id="result"></p>
+
+    <script>
+        var a=[1,87,54,48,42,99,75,65,2,6,9];
+        document.getElementById("result").innerHTML= a;
+        function ascending(){
+            a.sort(function(a,b){return a-b});
+              document.getElementById("result").innerHTML = a;
+
+        }
+        function descending() {
+             a.sort(function (a, b) { return b-a });
+             document.getElementById("result").innerHTML = a;
+        }
+    </script>
+    </body>
+
+</html>
